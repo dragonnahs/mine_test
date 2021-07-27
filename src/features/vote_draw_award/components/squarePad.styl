@@ -1,0 +1,41 @@
+.home
+  .draw
+    width 367px
+    height 367px
+    margin 0 auto
+    background url('../../../assets/vote_draw_award/draw_bg.png') no-repeat center center/100%
+    box-sizing border-box
+    padding 45px 40px
+    display flex
+    justify-content center
+    flex-wrap wrap
+    >div
+      margin-right 6px
+      &:nth-of-type(3n+3)
+        margin-right 0
+    .draw-item
+      width 89px
+      height 89px
+      box-sizing border-box
+      background url('../../../assets/vote_draw_award/draw_item_unselected.png') no-repeat center center/100%
+      display flex
+      align-items center
+      justify-content flex-start
+      padding-top 10px
+      flex-direction column
+      &.selected-draw-item
+        background url('../../../assets/vote_draw_award/draw_item_selected.png') no-repeat center center/100%
+      img
+        width 54px
+        height 50px
+      .draw-item-text
+        font-size 10px
+        color rgba(51, 51, 51, 1)
+    .draw-btn
+      width 89px
+      height 89px
+      box-sizing border-box
+      background url('../../../assets/vote_draw_award/draw_btn.png') no-repeat center center
+      background-size contain
+    
+  

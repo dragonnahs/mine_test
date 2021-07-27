@@ -1,0 +1,421 @@
+#labor
+  padding 0
+  .labor
+    width 100%
+    min-height 700px
+    background url('../../assets/labor_activity/bg.png') no-repeat top center/cover
+    padding-top 46px
+    box-sizing border-box
+    font-family Adobe Heiti Std
+    padding-bottom 44px
+    .labor-rule
+      width 64px
+      height 19px
+      background-color #39702D
+      border-radius 0 9px 9px 0
+      font-size 13px
+      color #ffffff
+      position absolute
+      top 28px
+      left 0
+      display flex
+      align-items center
+      justify-content center
+    .labor-top
+      width 100%
+      text-align center
+      font-size 0
+      img
+        size(290px, 90px)
+    .labor-money-box
+      size(349px, 234px)
+      background url('../../assets/labor_activity/money_box_bg.png') no-repeat top center/100% 100%
+      margin 249px auto 0
+      box-sizing border-box
+      padding-top 46px
+      .labor-money-tip
+        font-size 16px
+        color #F69A07
+        font-weight bold
+        text-align center
+        line-height 1
+        span
+          color #3D6F30
+          font-family Adobe Heiti Std
+      .labor-members
+        font-size 18px
+        color #666666
+        text-align center
+        margin-top 13px
+        line-height 1
+        &.is-hidden
+          visibility hidden
+      .labor-money-number
+        size(284px, 128px)
+        background url('../../assets/labor_activity/money_bg.png') no-repeat top center/100% 100%
+        box-sizing border-box
+        margin 0 auto
+        font-size 40px
+        font-family Source Han Sans CN
+        font-weight bold
+        color #F69907
+        text-align center
+        line-height 128px
+        &.is-show
+          margin-top 16px
+    .labor-ranking
+      size(346px, 455px)
+      border-radius 10px
+      box-sizing border-box
+      border 4px solid #A6D1A3
+      margin 28px auto 0
+      padding 0 5px
+      background-color #ffffff
+      .labor-end-active-count-time
+        display flex
+        align-items center
+        justify-content center
+        font-family PingFang SC
+        font-size 18px
+        color #F69907
+        font-weight bold
+        margin-top 20px
+        height 30px
+        span
+          display inline-block
+        .tip
+          color #3D6F30
+        .time
+          width 26px
+          text-align center
+      .labor-ranking-list
+        width 100%
+        height 288px
+        box-sizing border-box
+        overflow-y scroll
+      .labor-ranking-list-item
+        width 100%
+        height 48px
+        box-sizing border-box
+        font-size 14px
+        font-family PingFang SC
+        display flex
+        align-items center
+        justify-content flex-start
+        border 1px solid #99BE8B
+        border-top none
+        color #999999
+        &.labor-ranking-th
+          border-top 1px solid #99BE8B
+          border-radius 9px 9px 0 0
+          height 40px
+          color #779940
+          margin-top 14px
+          .first
+            font-size 14px
+          .second
+            justify-content center
+          >div
+            font-weight bold
+        &.labor-ranking-end
+          background rgba(143,170,102,0.38)
+          border-radius 0 0 9px 9px
+          border-top 2px solid #99BE8B
+        >div
+          display flex
+          align-items center
+          justify-content center
+        .first
+          width 55px
+          height 100%
+          box-sizing border-box
+          border-right 1px solid #99BE8B
+          color #779940
+          font-size 18px
+          font-weight bold
+          img
+            size(24px, 30px)
+        .second
+          width 100px
+          height 100%
+          box-sizing border-box
+          border-right 1px solid #99BE8B
+          padding 0 4px
+          display flex
+          align-items center
+          justify-content flex-start
+          img
+            size(25px, 25px)
+            border-radius 50%
+            margin-right 2px
+          div
+            white-space nowrap
+            text-overflow ellipsis
+            overflow hidden
+        .third
+          width 90px
+          height 100%
+          box-sizing border-box
+          border-right 1px solid #99BE8B
+          padding 0 5px
+          div
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+        .forth
+          width 80px
+          height 100%
+          padding 0 5px
+          box-sizing border-box
+          div
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+    .labor-begin-active-count-time
+      font-family PingFang SC
+      font-size 18px
+      font-weight bold
+      color #ffffff
+      text-shadow 0px 0px 48px rgba(108,148,59,0.38)
+      text-align center
+      margin 16px auto 0
+    .labor-enter-ranking
+      font-family PingFang SC
+      font-weight bold
+      font-size 18px
+      color #ffffff
+      margin-top 14px
+      text-align center
+    .labor-now-attend-btn
+      size(250px, 52px)
+      line-height 52px
+      text-align center
+      margin 16px auto 0
+      background url('../../assets/labor_activity/btn_bg.png') no-repeat top center/100% 100%
+      font-size 18px
+      font-family PingFang SC
+      font-weight bold
+      color #ffffff
+    .labor-no-start-btn
+      size(250px, 52px)
+      line-height 52px
+      text-align center
+      margin 12px auto 0
+      background url('../../assets/labor_activity/no_start.png') no-repeat top center/100% 100%
+      font-size 18px
+      font-family PingFang SC
+      font-weight bold
+      color #ffffff
+    .labor-notice
+      size(349px, 224px)
+      margin 44px auto 0
+      background url('../../assets/labor_activity/notice_bg_icon.png') no-repeat top center/100% 100%
+      position relative
+      box-sizing border-box
+      padding  35px 22px 0px
+      font-size 14px
+      font-weight bold
+      color #779940
+      line-height 28px
+      &:before
+        content '注意事项'
+        position absolute
+        size(129px, 39px)
+        font-size 18px
+        line-height 39px
+        text-align center
+        text-shadow 1px 2px 4px rgba(87,180,127,0.75)
+        color #ffffff
+        font-family PingFang SC
+        font-weight bold
+        background url('../../assets/labor_activity/tip_bg.png') no-repeat top center/100% 100%
+        left 50%
+        top 0
+        transform translateX(-50%) translateY(-15px)
+    .labor-commend
+      size(346px, 197px)
+      margin 44px auto 0
+      border-radius 8px
+      background url('../../assets/labor_activity/commend_book_border.png') no-repeat top center/100% 100%
+      position relative
+      box-sizing border-box
+      padding  4px 6px 8px 6px
+      &:before
+        content '推荐书籍'
+        position absolute
+        size(129px, 39px)
+        font-size 18px
+        line-height 39px
+        text-align center
+        text-shadow 1px 2px 4px rgba(87,180,127,0.75)
+        color #ffffff
+        font-family PingFang SC
+        font-weight bold
+        background url('../../assets/labor_activity/tip_bg.png') no-repeat top center/100% 100%
+        left 50%
+        top 0
+        transform translateX(-50%) translateY(-50%)
+      .labor-commend-list
+        display flex
+        // justify-content space-evenly
+        flex-flow row nowrap
+        align-items center
+        justify-content space-between
+        &:before, &:after
+          content ''
+          display block
+        margin-top 35px
+        .labor-commend-list-item
+          font-size 0
+          img
+            size(73px, 94px)
+            box-shadow 0px 0px 4px 0px rgba(117,117,117,0.38)
+      .labor-commend-btn
+        font-size 14px
+        font-family PingFang SC
+        font-weight bold
+        color #3D6F30
+        text-align center
+        margin-top 22px
+        img
+          size(11px, 11px)
+    .labor-rule-pop
+      font-size 14px
+      color #666666
+      size(100%, 100%)
+      position fixed
+      background rgba(0, 0, 0, 0.6)
+      display flex
+      align-items center
+      justify-content center
+      left 0
+      top 0
+      .labor-rule-pop-box
+        size(290px, 380px)
+        background-color #ffffff
+        border-radius 10px
+        border 4px solid #A6D1A3
+        box-sizing border-box
+        padding 20px 20px 0
+        position relative
+        .labor-rule-pop-title
+          color #333333
+          font-family PingFang SC
+          font-weight bold
+          font-size 16px
+          text-align center
+          margin-bottom 10px
+        .labor-rule-pop-content
+          line-height 26px
+        .labor-rule-pop-close
+          size(22px, 22px)
+          position absolute
+          right 10px
+          top 10px
+          background url('../../assets/labor_activity/close.png') no-repeat center center/100% 100%
+    .labor-draw
+      size(290px, 188px)
+      margin 31px auto
+      display flex
+      flex-direction column
+      align-items center
+      background url('../../assets/labor_activity/result_border_bg.png') no-repeat top center/100% 100%
+      padding-top 29px
+      box-sizing border-box
+      .labor-draw-title
+        font-family PingFang SC
+        font-size 16px
+        font-weight bold
+        color #3D6F30
+      .labor-draw-number
+        font-family Source Han Sans CN
+        font-size 40px
+        font-weight bold
+        color #F69907
+        margin-top 18px
+        line-height 1
+      .labor-draw-btn
+        background linear-gradient(0deg,rgba(246,190,86,1),rgba(246,152,3,1))
+        box-shadow 0px 3px 2px 0px rgba(154,211,158,0.45)
+        width 164px
+        height 38px
+        line-height 38px
+        text-align center
+        border-radius 19px
+        font-size 19px
+        color #ffffff
+        text-shadow 0px 3px 2px rgba(199,124,0,0.45)
+        font-family PingFang SC
+        font-weight bold
+        margin-top 22px
+        &.labor-already-draw-btn
+          filter grayscale(1)
+    .labor-draw-fail
+      size(290px, 188px)
+      margin 31px auto
+      display flex
+      flex-direction column
+      align-items center
+      background url('../../assets/labor_activity/result_border_bg.png') no-repeat top center/100% 100%
+      padding-top 50px
+      box-sizing border-box
+      .labor-draw-fail-title
+        font-family PingFang SC
+        font-size 16px
+        font-weight bold
+        color #3D6F30
+      .labor-draw-fail-number
+        font-size 14px
+        font-family PingFang SC
+        font-weight bold
+        color rgba(102,102,102,1)
+        margin-top 26px
+        padding 0 16px
+        line-height 24px
+        text-align center
+    .labor-wechat-pop
+      font-size 14px
+      color #666666
+      size(100%, 100%)
+      position fixed
+      background rgba(0, 0, 0, 0.6)
+      display flex
+      align-items center
+      justify-content center
+      left 0
+      top 0
+      .labor-wechat-pop-box
+        size(292px, 216px)
+        border-radius 10px
+        background url('../../assets/labor_activity/wechat_pop_bg.png') no-repeat top center/100% 100%
+        box-sizing border-box
+        padding 30px 10px 0
+        position relative
+        .labor-wechat-title
+          font-size 16px
+          text-align center
+          color #333333
+          font-weight bold
+          line-height 1
+        .labor-wechat-tip
+          // white-space nowrap
+          margin-top 35px
+          text-align center
+        .labor-wechat-btn
+          size(150px, 38px)
+          line-height 38px
+          text-align center
+          background url('../../assets/labor_activity/wechat_pop_btn.png') no-repeat top center/100% 100%
+          margin 34px auto 0
+          font-size 19px
+          color #ffffff
+          font-weight bold
+          text-shadow 0px 3px 2px rgba(199,124,0,0.45)
+        .labor-wechat-close
+          size(22px, 22px)
+          position absolute
+          right 12px
+          top 12px
+          background url('../../assets/labor_activity/close.png') no-repeat center center/100% 100%
+
+    

@@ -1,0 +1,322 @@
+body,html
+  size(100%, 100%)
+#parent
+  size(100%,100%)
+.bookslast-container
+  width 10rem
+  background #ffffff
+  position absolute
+  overflow auto
+  height 100%
+.bookslast-header
+  padding 0 0.51rem 0 0.4rem
+  background #F7F7F7
+.content 
+  margin 0.5rem
+  font-size 0.45rem
+  line-height .7rem
+  color #333333
+  margin-top 0.3rem
+  overflow-x hidden
+  word-wrap break-word
+  white-space pre-wrap
+  text-align justify
+  padding-bottom 2.6rem
+.content-title
+  color #333333
+  font-size 16px
+  padding-left 0.5rem
+  padding-top 0.5rem
+  font-weight bold
+.bottom_parent
+  fixed(bottom 0 left 0 right 0)
+  font-size 0.42rem
+  height 58px
+  background #ffffff
+  box-shadow -1px -1px 10px #c8c8c8
+  z-index 99
+  padding-top 7px
+  box-sizing border-box
+  box-shadow 0px 2px 10px 0px rgba(0, 0, 0, 0.15)
+.bookslast-tip 
+  color rgba(139, 87, 42, 1)
+  font-size 0.4rem
+  border-radius 5px
+  border 1px solid #edd8ce
+  background-color #fff6ee
+  box-shadow 0px 2px 10px #e6dedb
+  width 50%
+  text-align center
+  padding-bottom 0.23rem
+  padding-top 0.3rem
+  margin auto
+  fixed(left 0 right 0 bottom 1.8rem)
+  z-index 1
+  display flex
+  flex-direction row
+  align-items center
+  justify-content center
+.bookslast-tip img
+  size(0.45rem, 0.38rem)
+  margin-right 0.08rem
+.bottom_parent .right
+  text-align center
+  margin 0 auto
+  width 200px
+  font-size 16px
+  line-height normal
+  padding 9px 0
+  text-align center
+  color #ffffff
+  border-radius 28px
+  background linear-gradient(235deg, #FFC87A 0%, #F43A3A 100%)
+.header-top 
+  display flex
+  flex-direction row
+.header-top-1 
+  // margin-bottom 0.59rem
+  padding-top 0.51rem
+  padding-bottom 0.29rem
+.header-top-2
+  padding-top 0.51rem
+  padding-bottom 0.29rem
+.header-top .header-top-desc
+  flex 1
+  font-size 0.48rem
+  color #000000
+  display flex
+  justify-content flex-start
+  align-items center
+  line-height 0.67rem
+.header-top .header-top-numbers
+  font-size 0.4rem
+  color #999999
+.header-top .header-top-numbers .mark-number
+  color #333333
+  font-size 0.4rem
+.header-top .header-top-done
+  flex 1
+  font-size 0.4rem
+  color #333333
+  &.is-no-book
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+.header-top .header-top-done .header-top-book-done
+  margin-bottom 0rem
+  font-size 0.48rem
+  font-family PingFangSC-Medium, PingFang SC
+  font-weight bold
+  color #000000
+  line-height 0.67rem
+.header-top .header-top-done .header-top-book-done-other
+  display flex
+  font-size 0.37rem
+  font-family PingFangSC-Regular, PingFang SC
+  font-weight 400
+  color #999999
+  line-height 0.53rem
+.header-top .header-top-book-desc-done
+  font-size 0.4rem
+  color #333333
+  display flex
+  font-weight bold
+.header-top .header-top-book-desc-done img
+  size(0.45rem, 0.38rem)
+  margin-left 0.12rem
+.header-top-mark-button-fetch-common
+  size(82px, 28px)
+  border-radius 23px
+  font-size 14px
+  color #F43A3A
+  display flex
+  line-height normal
+  justify-content center
+  align-items center
+.header-top .header-top-mark-button-fetch, .header-top .header-top-button
+  border-radius 23px
+  background linear-gradient(235deg, #FFC87A 0%, #FDB270 15%, #F43A3A 100%)
+.header-top .header-top-mark-button-fetch span.text, .header-top .header-top-button span.text
+  color #FFFFFF
+  line-height normal
+.header-top .header-top-mark-button-fetch-success
+  background #f7f7f7
+  color #999999
+  border 1px solid #999999
+.header-bottom
+  height 39px
+  padding-bottom 15px
+  position relative
+  display flex
+  flex-direction row
+.header-bottom .header-bottom-comment
+  flex 1
+  display flex
+  flex-direction row
+  justify-content center
+  align-items flex-end
+  .comment_source
+    font-size 0.48rem
+    color #FF6A19
+    padding-right 10px 
+    font-weight bold
+    em
+      font-size 0.27rem
+      font-weight normal
+.header-bottom .header-bottom-monry
+  flex 1
+  display flex
+  flex-direction row
+  justify-content center
+  align-items flex-end
+  padding-top 3px
+  box-sizing border-box
+.header-bottom .header-bottom-comment img,
+.header-bottom .header-bottom-monry img
+  size(22px, 22px)
+  margin-right 10px
+  padding-top 3px
+.header-bottom .header-bottom-text 
+  font-size 0.32rem
+  color #000000
+  padding-top 3px
+  box-sizing border-box
+.bookslast-content 
+  background #ffffff
+.content-good-book 
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+.content-good-book-img 
+  size(3.48rem, 0.8rem)
+  position relative
+  font-size 0
+.content-good-book-img img 
+  size(3.47rem, 0.8rem)
+.content-good-book-text
+  position absolute
+  top 0.07rem
+  left 0.88rem
+  font-size 0.43rem
+  color #8B572A
+.content-book-info-container
+  padding 0.4rem 0.4rem 0.45rem
+  display flex
+  flex-direction row
+.content-book-info-container .content-book-cover
+  size(2.21rem, 2.93rem)
+  position relative
+  margin-right 0.43rem
+.content-book-info-container .content-book-cover .cover-img 
+  size(2.21rem, 2.93rem)
+.content-book-info-container .content-book-cover .book-score 
+  size(1.04rem, 0.45rem)
+  absolute(top 0)
+  display flex
+.content-book-info-container .content-book-cover .book-score img 
+  size(1.04rem, 0.45rem)
+.content-book-info-container .content-book-cover .book-score .book-score-text 
+  font-size 0.29rem
+  color #ffffff
+  absolute(top 0 left 0.08rem)
+.content-book-info 
+  flex 1
+.content-book-info .content-book-info-title 
+  font-size 0.42rem
+  color #333333
+  margin-bottom 0.29rem
+.content-book-info .content-book-info-author 
+  display flex
+  flex-direction row
+  justify-content flex-start
+  align-items center
+  margin-bottom 0.96rem
+.content-book-info .content-book-info-author img 
+  size(0.32rem, 0.32rem)
+  margin-right 0.08rem
+.content-book-info .content-book-info-author .content-book-info-author-text 
+  font-size 0.32rem
+  color #666666
+.content-book-info .content-book-info-serial 
+  font-size 0.32rem
+  color #666666
+  margin-bottom 0.27rem
+.content-book-info .content-book-info-nums 
+  font-size 0.32rem
+  color #666666
+.content-book-ranking 
+  width 1.55rem
+  margin-left 0.48rem
+.content-book-ranking .book-ranking 
+  width 1.55rem
+  height 1.81rem
+  position relative
+  display flex
+  margin-bottom 0.8rem
+.content-book-ranking .book-ranking .book-ranking-img 
+  size(1.55rem, 1.81rem)
+.content-book-ranking .book-ranking .book-ranking-text-container 
+  width 1.55rem
+  position absolute
+  top 0.26rem
+  left 0
+  font-size 0.35rem
+  color #ffffff
+  display flex
+  flex-direction column
+  align-items center
+.content-book-ranking .book-ranking .book-ranking-text-container .category 
+  font-size 0.27rem
+  margin-bottom 0.1rem
+.content-book-ranking .book-refresh 
+  height 0.32rem
+  display flex
+  flex-direction row
+  align-items center
+  font-size 0.32rem
+  color #333333
+.content-book-ranking .book-refresh img
+  size(0.32rem, 0.32rem)
+  margin-right 0.13rem
+  margin-top -2px
+.content-book-video 
+  height 7.63rem
+.edit-push 
+  width 100%
+  padding 20px 0 10px
+.edit-push-icon
+  font-size 18px
+  font-weight bold
+  color #000
+  padding-left 16px
+.edit-push-books
+  width 100%
+  padding 0 16px
+  box-sizing border-box
+  margin-top 20px
+  display flex
+  flex-direction row
+  justify-content space-between
+.edit-push-book-item 
+  width 90px
+  display inline-block
+.edit-push-book-item img 
+  size(90px, 120px)
+  border-radius 4px
+  box-shadow 0 0 6px 0 rgba(0,0,0,0.10)
+.edit-push-bookname 
+  width 100%
+  text-overflow ellipsis
+  white-space nowrap
+  overflow hidden
+  font-size 12px
+  font-family PingFangSC-Regular, PingFang SC
+  font-weight bold
+  color #000000
+  padding-top 0.1rem
+.edit-push-hot
+  font-size 12px
+  font-family PingFangSC-Regular, PingFang SC
+  color #999999

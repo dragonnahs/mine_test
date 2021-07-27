@@ -1,0 +1,143 @@
+.vote-pop
+  width 100%
+  height 100vh
+  position fixed
+  background rgba(0, 0, 0, 0.6)
+  top 0
+  left 0
+  z-index 30
+  .vote-pop-container
+    width 375px
+    height 170px
+    position absolute
+    left 0
+    bottom 0
+    box-sizing border-box
+    background #ffffff
+    border-radius 20px 20px 0 0
+    &.is-task-list
+      height 320px
+    .vote-pop-header
+      height 42px
+      line-height 42px
+      box-sizing border-box
+      border-bottom 1px solid #EEEEEE
+      color #333333
+      font-size 16px
+      font-weight bold
+      text-align center
+    .vote-pop-close
+      position absolute
+      top 14px
+      left 20px
+      width 14px
+      height 14px
+      background url('../../../../assets/video_vote/close.png') no-repeat center/100%
+    .vote-pop-content
+      .vote-pop-toggle-num
+        display flex
+        align-items center
+        justify-content center
+        font-size 16px
+        color #333333
+        margin-top 28px
+        margin-bottom 10px
+        .vote-pop-delete
+          width 24px
+          height 24px
+          margin 0 10px
+          background url('../../../../assets/video_vote/vote_delete.png') no-repeat center/100%
+          &.vote-pop-disabled
+            opacity 0.4
+        .vote-pop-add
+          width 24px
+          height 24px
+          margin 0 10px
+          background url('../../../../assets/video_vote/vote_add.png') no-repeat center/100%
+          &.vote-pop-disabled
+            opacity 0.4
+      .vote-pop-toggle-tip
+        color #999999
+        font-size 12px
+        text-align center
+      .vote-pop-bottom
+        height 40px
+        box-sizing border-box
+        padding-left 22px
+        display flex
+        align-items center
+        color #333333
+        font-size 14px
+        border-top 1px solid #EEEEEE
+        margin-top 10px
+        .vote-pop-get-votes-tip
+          color #FF5A00
+          font-size 10px
+          margin-left 3px
+        .vote-pop-vote-btn
+          width 186px
+          height 56px
+          line-height 56px
+          border-radius 56px
+          font-size 28px
+          transform scale(0.5)
+          transform-origin right center
+          position absolute
+          right 20px
+          text-align center
+          background linear-gradient(180deg,rgba(159,148,255,1) 0%,rgba(108,93,255,1) 100%)
+          color #ffffff
+      .vote-pop-no-tip
+        font-size 14px
+        color #333333
+        padding 8px 0
+        text-align center
+      .vote-pop-no-btn
+        width 176px
+        height 56px
+        line-height 56px
+        border-radius 56px
+        font-size 28px
+        transform scale(0.5)
+        transform-origin center top
+        text-align center
+        margin 0 auto -25px
+        background linear-gradient(180deg,rgba(159,148,255,1) 0%,rgba(108,93,255,1) 100%)
+        color #ffffff
+      .vote-pop-task-item
+        box-sizing border-box
+        height 70px
+        border-bottom 1px solid #EEEEEE
+        display flex
+        align-items center
+        justify-content space-between
+        padding 0 20px
+        font-size 14px
+        color #333333
+        &:last-of-type
+          border none
+        .vote-task-item-left
+          text-align left
+          max-width 200px
+          overflow hidden
+          .vote-task-item-title
+            font-weight 500
+          .vote-task-item-desc
+            font-size 12px
+            color #999999
+            margin-top 5px
+        .vote-task-item-btn
+          width 176px
+          height 52px
+          line-height 52px
+          text-align center
+          border-radius 52px
+          background linear-gradient(180deg,rgba(159,148,255,1) 0%,rgba(108,93,255,1) 100%)
+          color #ffffff
+          font-size 28px
+          transform scale(0.5)
+          transform-origin center right
+          position absolute
+          right 20px
+          &.already-get-award
+            background #999999

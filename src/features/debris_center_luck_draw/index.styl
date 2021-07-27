@@ -1,0 +1,117 @@
+
+.debris_luck_draw
+  width 375px
+  min-height 100vh
+  background url('../../assets/debris_luck_draw/bg.png') no-repeat top center/100% auto
+  .left_img
+    width 28px
+  .luck_draw_center
+    text-align center
+    position relative
+    .draw_luck_bg
+      width 100%
+    .luck_draw_notice
+      position absolute
+      color #FFEDAA
+      font-size 14px
+      background url('../../assets/debris_luck_draw/luck_draw_notice.png') no-repeat left center/16px 16px
+      left 50%
+      top 20px
+      transform translateX(-50%)
+      box-sizing: border-box
+      padding-left 20px
+      white-space nowrap
+    .draw_luck
+      position absolute
+      top 66px
+      left 50%
+      transform translateX(-50%)
+      width 322px
+      height 284px
+      border-radius 20px
+    .btn_box
+      position absolute
+      width 100%
+      display flex
+      align-items cneter
+      justify-content space-between
+      top 376px
+      left 0
+      padding 0 23px
+      box-sizing border-box
+      &.free_draw_btn
+        justify-content center
+      .draw_luck_btn
+        width 158px
+        height 70px
+        text-align center
+        font-size 18px
+        color #8D3000
+        background url('../../assets/debris_luck_draw/btn_default.png') no-repeat center/100% 100%
+        box-sizing border-box
+        padding 0px 0 0px
+        padding-bottom 10px
+        font-weight 500
+        &:active
+          transform scale(0.8)
+  .rule
+    width 326px
+    box-sizing border-box
+    padding 32px 13px
+    background #FFFCE4
+    color #8D3000
+    position relative
+    left 50%
+    transform translateX(-50%)
+    top -40px
+    .rule_title
+      margin-top -20px
+      font-size 14px
+      padding-bottom 12px
+    .rule_content
+      font-size 12px
+      line-height 20px
+  .draw_pop
+    position fixed
+    width 100%
+    height 100vh
+    background rgba(0,0,0,0.71)
+    display flex
+    align-items center
+    justify-content center
+    left 0
+    top 0
+    z-index 99999
+    .draw_pop_content
+      width 300px
+      height 180px
+      border-radius 18px
+      background #ffffff
+      font-size 16px
+      display flex
+      flex-direction column
+      align-items center
+      .draw_pop_bg
+        width 209px
+        height 124px
+        background url('../../assets/debris_luck_draw/draw_pop_bg.png') no-repeat center/100%
+        margin-top -82px
+      .draw_pop_text
+        margin-top 25px
+        padding 0 50px
+        text-align center
+        font-weight 500
+        line-height 20px
+        height 40px
+        &.draw_pop_text_thanks
+          margin-top 61px
+      .draw_pop_btn
+        width 110px
+        height 36px
+        line-height 36px
+        text-align center
+        border-radius 18px
+        background linear-gradient(to right, #F43A3A, #FFC87A)
+        color #ffffff
+        font-size initial
+        margin-top 23px

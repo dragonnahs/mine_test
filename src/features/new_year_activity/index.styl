@@ -1,0 +1,156 @@
+.new_year_activity
+  width 100%
+  min-height 100vh
+  position relative
+  background #BE1E21
+  font-size 0
+  .bg
+    width 100%
+    height auto
+  .rule_btn
+    width 120px
+    height 36px
+    line-height 36px
+    border-radius 18px
+    font-size 24px
+    color #ffffff
+    text-align center
+    background rgba(255,255,255,0.25)
+    position absolute
+    left 50%
+    top 527px
+    transform scale(0.5) translateX(-50%)
+    transform-origin left top
+  .new_year_award_bg
+    width 146px
+    height 146px
+    position absolute
+    left 191px
+    top 627px
+    animation myAnimation 5s ease infinite
+  .new_year_rule_pop
+    width 100%
+    height 100vh
+    background rgba(0,0,0,0.7)
+    position fixed
+    left 0
+    top 0
+    z-index 2
+    display flex
+    align-items center
+    justify-content center
+    .new_year_rule_bg
+      width 350px
+      height 263px
+      background url('../../assets/new_year_activity/new_year_rule.png') no-repeat center/100%
+      position absolute
+      .new_year_rule_close
+        width 134px
+        height 36px
+        background url('../../assets/new_year_activity/new_year_rule_btn.png') no-repeat center/100%
+        position absolute
+        left 50%
+        transform translateX(-50%)
+        bottom -18px
+  .new_year_book
+    position absolute
+    width 308px
+    left 50%
+    transform translateX(-50%)
+    top 855px
+    box-sizing border-box
+    overflow hidden
+    margin-left 0.5px
+    .new_year_book_toggle
+      display flex
+      align-items center
+      justify-content space-between
+      box-sizing border-box
+      padding 0 43px
+      width 100%
+      padding-top 19px
+      .new_year_book_toggle_item
+        width 106px
+        height 36px
+        text-align center
+        font-size 0
+        display flex
+        align-items center
+        justify-content center
+        img
+          width 64px
+          height auto
+        &.male_item_active
+          background url('../../assets/new_year_activity/male_btn_active.png') no-repeat center/100%
+        &.female_item_active
+          background url('../../assets/new_year_activity/female_btn_active.png') no-repeat center/100%
+  .new_year_book_box
+    margin-top 20px
+    .book_info
+      display flex
+      box-sizing border-box
+      padding-left 12px
+      display flex
+      .book_cover
+        width 72px
+        height 95px
+        flex-grow 0
+        flex-shrink 0
+        background #EE0000
+        box-shadow 0 0 6px 0 rgba(0,0,0,0.10)
+        border-radius 4px
+      .book_info_right
+        margin-left 10px
+        width 170px
+        .book_name
+          font-size 16px
+          font-weight 500
+          line-height 20px
+          background linear-gradient(180deg, #FF8900 0%, #D54D00 100%)
+          -webkit-background-clip text 
+          -webkit-text-fill-color transparent
+          white-space nowrap
+          overflow hidden
+          text-overflow ellipsis
+        .book_intro
+          font-size 14px
+          color #B47546
+          font-weight 400
+          line-height 16px
+          margin-top 10px
+          height 48px
+        .book_tags
+          margin-top 4px
+          font-size 0
+          .book_tag_item
+            display inline-block
+            font-size 10px
+            color #B47546
+            font-weight 400
+            margin-right 10px
+            &:last-of-type
+              margin 0
+
+
+
+@keyframes myAnimation{
+  	0% {
+      transform:rotate(0deg);
+    }
+    80% {
+      transform:rotate(360deg);
+    }
+
+    100% {
+      transform:rotate(360deg);
+    }
+}
+
+body,html{
+  background #BE1E21
+}
+
+.overHiden {
+  height: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,22 @@
+extends ../../common/index.pug
+
+//- 模板参数
+block arguments
+  - var title = "涂檬"
+  - var remlayout = true
+
+block headerJS
+  script.
+    //动态适配分辨率
+    var docEl = document.documentElement;
+    var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    var recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        if(clientWidth>375){
+          clientWidth= 375
+        }
+        docEl.style.fontSize ='37.5px';
+    };
+    window.addEventListener(resizeEvt, recalc, false);
+    recalc();

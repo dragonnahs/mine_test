@@ -1,0 +1,249 @@
+#post-bar
+  height 100vh
+  width 100%
+  overflow hidden
+  display flex
+  flex-direction column
+  .nav
+    display flex
+    box-sizing border-box
+    padding 0 100px
+    height 56px
+    line-height 56px
+    border-bottom 1px solid #EEEEEE
+    background-color #fff
+    border-radius 14px 14px 0 0
+    position absolute
+    bottom 0
+    left 0
+    width 100%
+    justify-content space-between
+    color #333333
+    font-size 16px
+    &.is-fixed-top
+      position fixed
+      top 0
+      left 0
+    .nav-dynamic
+      position relative
+      &.active
+        font-weight bold
+        &:before
+          content ''
+          position absolute
+          width 18px
+          height 2px
+          border-radius 2px
+          background-color #FF5A00
+          left 50%
+          bottom 0
+          transform translateX(-50%)
+    .nav-hot
+      position relative
+      &:after
+        content ''
+        position absolute
+        border-width 6px
+        border-style solid
+        border-color #333333 transparent transparent transparent
+        top 25px
+        right -14px
+      &.is-show-hot
+        &:after
+          border-color transparent transparent #333333 transparent
+          top 18px
+      .hot-box
+        position absolute
+        width 120px
+        border-radius 4px
+        background-color #EEEEEE
+        left -5px
+        top 46px
+        z-index 20
+        &:before
+          content ''
+          position absolute
+          border-width 6px
+          border-style solid
+          border-color transparent transparent #eeeeee transparent
+          top -12px
+          left 15px
+        .hot-item
+          height 32px
+          box-sizing border-box
+          line-height 32px
+          color #333333
+          font-size 12px
+          padding 0 10px
+          font-weight normal
+          &:first-of-type
+            border-bottom 1px solid #E5E5E5
+          &.active
+            color #FF5A00
+            background url('../../assets/community/selected.png') no-repeat 95px center/11px 8px
+      &.active
+        font-weight bold
+        &:before
+          content ''
+          position absolute
+          width 18px
+          height 2px
+          border-radius 2px
+          background-color #FF5A00
+          left 50%
+          bottom 0
+          transform translateX(-50%)
+  .top
+    height 200px
+    width 100%
+    background-color #709EB2
+    position relative
+    .book
+      padding 20px
+      box-sizing border-box
+      display flex
+      .book-cover
+        width 82px
+        height 110px
+        border-radius 4px
+        background url('../../assets/community/book_default.png') no-repeat center center/100% 100%
+        background-color #D8D8D8
+        flex 0 0 auto
+      .book-info
+        margin-left 20px
+        .book-name
+          color #FFFFFF
+          font-size 18px
+          line-height 16px
+          padding 10px 0 10px
+          width 240px
+          overflow hidden
+          white-space nowrap
+          text-overflow ellipsis
+        .book-info-bottom
+          display flex
+          .book-info-left
+            margin-top 2px
+            width 156px
+            .book-tip
+              font-size 0
+              span
+                font-size 14px
+                color #ffffff
+                padding-left 20px
+                &:first-of-type
+                  margin-right 20px
+                  background url('../../assets/community/user_icon.png') no-repeat center left/15px 15px
+                &:last-of-type
+                  background url('../../assets/community/posts.png') no-repeat center left/16px 16px
+            .book-handle
+              display flex
+              font-size 0
+              align-items center
+              height 20px
+              margin-bottom 10px
+              .book-ranking
+                transform scale(0.5)
+                transform-origin left center
+                display flex
+                font-size 20px
+                max-width 360px
+                box-sizing border-box
+                height 40px
+                align-items center
+                background #E1DDD8
+                border-radius 20px
+                color #E85201
+                padding 0 10px 0 4px
+                margin-right 16px
+                .book-ranking-num
+                  width 32px
+                  height 32px
+                  border-radius 50%
+                  background linear-gradient(#FFB254, #FF5A00)
+                  color #ffffff
+                  text-align center
+                  line-height 32px
+                .book-ranking-text
+                  margin-left 5px
+                  flex 1
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+                  display flex
+                  align-items center
+                  .book-right-img
+                    margin-left 4px
+                    display inline-block
+                    width 14px
+                    height 20px
+                    background url('../../assets/community/right_icon.png') no-repeat center left/100%
+          .book-vote
+            font-size 28px
+            background #FF5A00
+            box-shadow 0px 2px 4px 0px rgba(255,90,0,0.5)
+            border-radius 24px
+            width 132px
+            height 48px
+            text-align center
+            color #ffffff
+            box-sizing border-box
+            line-height 48px
+            vertical-align middle
+            transform scale(0.5)
+            transform-origin left top
+  
+  .wrapper
+    // flex 1
+    width 100%
+    // overflow hidden
+    background #ffffff
+    &.is-fixed-wrapper
+      // padding-top 56px
+    .content
+      width 100%
+      height auto
+      overflow hidden
+      padding-bottom 80px
+      .is-null-comment
+        background url('../../assets/community/no_comment.png') no-repeat top center/239px 135px
+        text-align center
+        margin-top 50px
+        font-size 20px
+        color #BBBBBB
+        padding-top 150px
+      .is-has-more
+        font-size 14px
+        color #999999
+        text-align center
+        border-top 1px solid #EEEEEE
+        padding-top 10px
+      .ad-box
+        width 100%
+        height 60px
+        color #333333
+        font-size 16px
+        padding-left 46px
+        line-height 60px
+        background url('../../assets/community/broadcast.png') no-repeat 20px center/22px 22px
+  .publish
+    width 158px
+    height 44px
+    border-radius 22px
+    position fixed
+    bottom 24px
+    background linear-gradient(#FA9000, #F05703)
+    font-size 16px
+    color #ffffff
+    display flex
+    align-items center
+    justify-content center
+    left 50%
+    transform translateX(-50%)
+    transition all ease 0.5s
+    &.publish-animate
+      bottom -100px
+    img
+      width 13px
+      height 18px
+      margin-right 10px

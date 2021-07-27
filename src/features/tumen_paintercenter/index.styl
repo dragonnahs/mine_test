@@ -1,0 +1,74 @@
+@import '../../styles/index.styl';
+body,html
+  size(100%, 100%)
+  #appbox
+    width: 100vw
+    min-height: 100vh
+    box-sizing: border-box
+    background: #000
+    .center_top
+      width: 100vw
+      height: 130px
+    .oper_btn
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 35px 0 36px 
+      .btn_go
+        width: 131px
+        height: 44px
+        object-fit: contain
+      .bgbtnbox
+        position relative
+        background-image: url('../../assets/tu_starplan/paintecenter_abtn.png')
+        background-size: 100%
+        background-repeat: no-repeat
+        text-align: center
+        color: #000
+        line-height: 44px
+        font-size: 16px
+        font-family: PingFangSCBold;
+        font-weight: bold
+        margin-right: 24px
+    .content_box
+      width: 351px
+      position: relative
+      margin-left: 12px
+      padding: 18px 18px 0
+      box-sizing: border-box
+      background-image: url('../../assets/tu_starplan/paincenter_contentbg.png')
+      background-size: 100%
+      background-repeat: no-repeat
+      .tipimg
+        width: 33px
+        object-fit: contain
+        position: absolute
+        right: 0
+        top: -17px
+      .list_box
+        list-style: none
+        box-sizing: border-box
+        .item_box
+          display: flex
+          justify-content: flex-start
+          align-items: center
+          padding-bottom: 30px
+          .boximg
+            width: 67px
+            height 67px
+            object-fit: contain
+            margin-right: 14px
+            flex-shrink: 0
+          .desbox
+            font-size: 14px
+            font-family: PingFangSC-Regular, PingFang SC
+            font-weight: 400
+            color: #FFFFFF
+            line-height: 22px
+    .bottom_tipbox
+      font-size: 12px
+      font-family: PingFangSC-Regular, PingFang SC
+      font-weight: 400
+      color: #999
+      text-align: center
+      margin-top: 14px
